@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(28, 37, 42, 255);
+    font-family: Helvetica, Arial, sans-serif;
+    color: white;
+}
+
+/* Apply the scroll bar style to the entire page */
+body {
+    scrollbar-width: thin;
+    scrollbar-color: aqua transparent;
+}
+
+/* Style the scroll bar thumb (scrollable area) */
+body::-webkit-scrollbar-thumb {
+    background-color: aqua;
+}
+
+/* Style the scroll bar track (non-scrollable area) */
+body::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+/* Your existing CSS styles */
+
+.breadcrumb_logo img {
+    height: 80px;
+    width: auto; /* To maintain aspect ratio */
+}
+
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    background-color: rgba(28, 37, 42, 0.8);
+    backdrop-filter: blur(10px);
+    z-index: 1;
+}
+
+.breadcrumb ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    color: white;
+}
+
+.breadcrumb a:hover {
+    color: silver;
+}
+
+.breadcrumb li {
+    margin-right: 15px;
+    font-size: 18px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.breadcrumb li:last-child {
+    margin-right: 0;
+}
+
+.fallen_logo {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.fallen_logo img {
+    max-width: 100%;
+    height: 50px;
+}
+
+.video-background {
+    position: relative;
+    width: 100%;
+    height: 60vh; /* Adjust this value as needed */
+    overflow: hidden;
+}
+
+/* Adjust the video positioning to be centered within the .video-background */
+.video-background video {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#about h1 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 auto 20px;
+    max-width: 90%;
+}
+
+#about p {
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 90%;
+}
+
+#goals h1 {
+    font-size: 24px;
+    text-align: center;
+}
+
+#goals h3 {
+    font-size: 18px;
+    text-align: center;
+}
+
+#goals ul {
+    font-size: 16px;
+    text-align: center;
+}
+
+.future-1 img,
+.green-futuristic img {
+    display: block;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+footer {
+    background-color: #333;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+}
+
+.feedback-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(28, 37, 42, 255);
+    border-radius: 5px;
+}
+
+.feedback-form h5 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.feedback-form form input,
+.feedback-form form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.feedback-form form button {
+    background-color: #0c0c0c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.feedback-form form button:hover {
+    background-color: #333;
+}
+
+.clear {
+    clear: both;
+}
+
+#contact h1 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    font-size: 16px;
+    text-align: center;
+}
+
+.about-dev h2 {
+    font-size: 24px;
+    text-align: center;
+}
+
+.about-dev p {
+    font-size: 16px;
+    text-align: center;
+}
+
+/* Media queries for responsiveness */
+
+@media screen and (max-width: 768px) {
+    .video-background {
+        height: 40vh;
+    }
+
+    #about h1,
+    #about p,
+    #goals h1,
+    #goals h3,
+    #goals ul,
+    .contact-info,
+    .about-dev h2,
+    .about-dev p {
+        max-width: 100%;
+    }
+
+    footer .feedback-form {
+        max-width: 100%;
+    }
+}
+
+/* Additional CSS styles for Brave browser scrollbar */
+@media screen and (min-width: 1000px) {
+    body.brave-scrollbar {
+        scrollbar-color: aqua transparent;
+    }
+}
+
+@media screen and (max-width: 999px) {
+    body.brave-scrollbar {
+        scrollbar-width: thin;
+    }
+}
